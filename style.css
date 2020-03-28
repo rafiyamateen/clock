@@ -1,0 +1,157 @@
+body{
+    background-color: rgb(68, 81, 119);
+}
+.clock{
+    width: 300px;
+    height: 300px;
+    background-color: whitesmoke;
+    margin: 5% auto 0;
+    border-radius: 50%;
+    border: 15px solid rgb(73, 72, 72);
+    position: relative;
+}
+.center{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+background-color: rgb(109, 105, 105);
+z-index: 4;
+}
+.hr{
+    position: absolute;
+    width: 4px;
+    height: 65px;
+    background-color: rgb(58, 55, 97);
+    top: 85px;
+    left: 148px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+transform-origin: 50% 100%;
+z-index: 1;
+}
+.min{
+    position: absolute;
+    width: 4px;
+    height: 100px;
+    background-color: rgb(53, 91, 129);
+    top: 50px;
+    left: 148px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform-origin: 50% 100%;
+    z-index: 2;
+}
+.sec{
+    position: absolute;
+    width: 4px;
+    height: 100px;
+    background-color: rgb(165, 77, 77);
+    top: 50px;
+    left: 148px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+transform-origin: 50% 100%;
+z-index: 3;
+}
+span{
+    position: absolute;
+    display: inline-block;
+    font-size: 25px;
+}
+.n1{
+    right: 86px;
+    top: 37px;
+}
+.n2{
+    right: 42px;
+    top: 77px;
+}
+.n3{
+    top: 136.5px;
+    right: 25px;
+}
+.n4{
+    right: 42px;
+    top: 195px;
+}
+.n5{
+    right: 85px;
+    top: 235px;
+}
+.n6{
+    left: 143px;
+    bottom: 23px;
+}
+.n7{
+    left: 88px;
+    bottom: 35px;
+}
+.n8{
+    left: 47px;
+    bottom: 74px;
+}
+.n9{
+    top: 136.5px;
+    left: 25px;
+}
+.n10{
+    top: 78px;
+    left: 42px;
+}
+.n11{
+    top: 37px;
+    left: 80px;
+}
+.n12{
+    left: 137px;
+    top: 25px;
+}
+.lines{
+    position: absolute;
+width: 2px;
+height: 15px;
+background-color: black;
+left: 50%;
+margin-left: -1px;
+transform-origin: 50% 150px;
+}
+.lines:nth-of-type(5n){
+    position: absolute;
+width: 3px;
+height: 23px;
+background-color: black;
+left: 50%;
+margin-left: -1px;
+}
+.date{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    top: 70px;
+    left: 100px;
+    border-radius: 10px;
+    background-color: rgb(129, 123, 123);
+    color: rgb(243, 234, 234);
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 2px;
+}
+.day{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    bottom: 70px;
+    left: 100px;
+    border-radius: 10px;
+    background-color: rgb(129, 123, 123);
+    color: rgb(243, 234, 234);
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 2px;
+}
